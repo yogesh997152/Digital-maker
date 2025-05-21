@@ -1,0 +1,1003 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Digital Maker</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    rel="stylesheet">
+<style>
+    * {
+        padding: 0%;
+        margin: 0%;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: "Inter", serif;
+        font-optical-sizing: auto;
+        font-style: normal;
+        overflow-x: hidden;
+
+    }
+
+    p {
+        font-size: 17px;
+        line-height: 29px;
+        font-weight: 200;
+    }
+
+    h3 {
+        font-size: 44px;
+        padding-top: 44px;
+        line-height: 36px;
+    }
+
+    .header-wrapper .logo-wrapper img {
+        width: 78px;
+        margin: 24.11px 0 24.11px 38.8px;
+    }
+
+    section#header {
+        width: 100%;
+        position: absolute;
+        top: 0;
+    }
+
+    .hero-wrapper {
+        background-color: black;
+    }
+
+    section#hero .container,
+    section#header .container {
+        margin-left: 74px;
+        margin-right: 74px;
+
+    }
+
+    .header-wrapper {
+        display: flex;
+        background-color: black;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .header-wrapper .logo-wrapper {
+        width: 670px;
+        color: white;
+        display: flex;
+        align-items: center;
+    }
+
+    .header-wrapper .logo-wrapper p {
+        margin-left: 80px;
+    }
+
+    .hello-wrapper {
+        background-color: white;
+        border-radius: 50%;
+        width: 75px;
+        height: 75px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        z-index: 1001;
+        right: 30px;
+        box-shadow: -1px 0px 5px;
+    }
+
+    .hello-wrapper img {
+        width: 30px;
+    }
+
+    .hello-btn {
+        position: absolute;
+        z-index: 1001;
+        right: 170px;
+        top: 0;
+    }
+
+    section#hero {
+        /* height: 770px; */
+        overflow: hidden;
+    }
+
+    .hero-sideimage img {
+        width: 420px;
+        z-index: 100;
+        position: relative;
+        border-radius: 30px;
+    }
+
+    .hero-wrapper {
+        display: flex;
+        justify-content: space-between;
+        border-radius: 30px;
+    }
+
+    /* .hero-heading {
+text-align: center;
+} */
+
+    .hero-heading h1 {
+        color: white;
+        font-size: 170px;
+        font-family: inter;
+        margin-left: 100px;
+        margin-top: 150px;
+    }
+
+    .camera {
+        width: 420px;
+        height: 126px;
+        background-color: white;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        margin: auto;
+        margin: 50px 0 60px 100px;
+    }
+
+    .camera p span {
+        color: #0000EE;
+        text-decoration: underline;
+        font-weight: 600;
+        font-size: 16px;
+    }
+
+    .hello-honors {
+        position: absolute;
+        right: 0;
+        top: 50%;
+        z-index: 1000;
+    }
+
+    .hello-honors img {
+        width: 53px;
+    }
+
+    .camera img {
+        width: 98px;
+        margin: 11px 16px 17px 12px;
+    }
+
+    section#plus {
+        margin: 80px 127.5px 70px 127.5px;
+        text-align: center;
+    }
+
+    .plus-wrapper h2 {
+        font-size: 52px;
+        margin-bottom: 15px;
+    }
+
+    .plus-wrapper p {
+        font-size: 18px;
+        width: 490px;
+        margin: auto;
+    }
+
+    .plus-wrapper p span {
+        text-decoration: underline;
+    }
+
+    section#offer {
+        margin: 0px 100px;
+        background-color: black;
+        color: white;
+        border-radius: 20px;
+    }
+
+    .offer-heading h3 {
+        font-size: 44px;
+        padding-top: 78px;
+    }
+
+    .offer-wrapper img {
+        width: 147px;
+        position: absolute;
+        left: -220px;
+    }
+
+    .offer-content {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 33px;
+    }
+
+    .offer-wrapper {
+        width: 730px;
+        margin-left: 180px;
+        position: relative;
+    }
+
+    .offer-heading p {
+        padding-top: 20px;
+    }
+
+    button.btn {
+        margin-top: 40px;
+        margin-bottom: 60px;
+        width: 318px;
+        height: 56px;
+        border-radius: 20px;
+        background-image: linear-gradient(to right, #D95DB0, #3344DC);
+        border: none;
+        color: white;
+        font-size: 19px;
+        line-height: 20px;
+    }
+
+    section#double-offer {
+        margin: 60px 100px 0px 113px;
+    }
+
+    .double-wrapper {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .toast img,
+    .club img {
+        width: 206px;
+        margin-right: 48px;
+        position: absolute;
+        left: -110px;
+    }
+
+    .toast-inner h3,
+    .club-inner h3 {
+        font-size: 44px;
+        line-height: 36px;
+        font-weight: 500;
+        padding: 0;
+        margin-bottom: 31px;
+    }
+
+    .toast,
+    .club {
+        width: 610px;
+        height: 564px;
+        box-shadow: 1px 1px 20px;
+        border-radius: 30px;
+        display: flex;
+        position: relative;
+    }
+
+    .toast-inner h3 img,
+    .club-inner h3 img {
+        width: 40px;
+        position: absolute;
+        left: 60%;
+    }
+
+    .offer-heading h3 img {
+        width: 50px;
+        position: absolute;
+        left: 30%;
+    }
+
+    .offer-content h4 {
+        font-weight: 400;
+    }
+
+    .toast-inner,
+    .club-inner {
+        margin-top: 40px;
+        margin-left: 140px;
+        width: 410px;
+    }
+
+    .big-wrapper h1 {
+        font-size: 290px;
+        line-height: 288px;
+        font-weight: bold;
+        color: #f0f0f0;
+        white-space: nowrap;
+        text-align:center;
+    }
+
+    section#big-heading {
+        transform: rotate(-3deg);
+        margin-bottom: 33px;
+    }
+
+    section#partner-logo {
+        background-color: #F4F4F4;
+    }
+
+    section#partner-logo .contacter {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        text-align: center;
+    }
+
+    section#partner-logo .contacter h3 {
+        padding-bottom: 61px;
+    }
+
+    .grow-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .grow-one img {
+        /* width: 720px; */
+        height: 590px;
+        object-fit: contain;
+    }
+
+    section#grow {
+        margin-bottom: 60px;
+    }
+
+    .grow-one.two {
+        text-align: center;
+    }
+
+    .grow-one.two h2 {
+        font-size: 55px;
+        line-height: 60px;
+    }
+
+    .grow-one.two p {
+        width: 560px;
+        padding-top: 39px;
+        padding-bottom: 61px;
+    }
+
+    .partner-wrapper {
+        display: flex;
+        width: 1008px;
+        margin: auto;
+        justify-content: space-around;
+        margin-bottom: 60px;
+    }
+
+    .partner-wrapper img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .notre-inner {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 16px;
+        justify-content: center;
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+
+    .notre-one {
+        width: 310px;
+    }
+
+    section#notre {
+        margin: 140px;
+    }
+
+    .notre-heading h2 {
+        font-size: 56px;
+        line-height: 36px;
+        padding-top: 80px;
+        margin-bottom: 30px;
+    }
+
+    .notre-one img {
+        width: 52px;
+        margin: 40px 0 16px;
+    }
+
+    .notre-one h4 {
+        font-size: 28px;
+        line-height: 20px;
+        margin-bottom: 20px;
+    }
+
+    .notre-one p {
+        font-size: 16px;
+        line-height: 23px;
+    }
+
+    .notre-heading p {
+        width: 675px;
+        margin: auto;
+        font-weight: 200;
+        padding-bottom: 41px;
+    }
+
+    .notre-wrapper {
+        background-color: #0A090F;
+        color: white;
+        text-align: center;
+        border-radius: 20px;
+    }
+
+    .project-wrapper {
+        display: flex;
+        justify-content: space-evenly;
+        gap: 40px;
+    }
+
+    .project-one {
+        width: 469px;
+    }
+
+    .project-one h3 {
+        font-size: 43px;
+        font-weight: 400;
+        line-height: 36px;
+        margin-bottom: 21px;
+        padding-top: 46px;
+    }
+
+    .project-one p {
+        margin-bottom: 64px;
+    }
+
+
+
+
+    .footer-inner img {
+        width: 144px;
+    }
+
+    .project-img img {
+        width: 364px;
+        height: 420px;
+    }
+
+    section#project {
+        margin-left: 100px;
+        margin-bottom: 140px;
+    }
+
+    section#footer {
+        border: 5px solid transparent;
+        margin: 0 20px;
+        border-bottom: none;
+        border-image: linear-gradient(to right, #D95DB0, #3344DC);
+        border-image-slice: 1;
+    }
+
+    .footer-wrapper {
+        display: flex;
+        justify-content: space-between;
+        padding: 40px 40px 20px 40px;
+        margin-bottom: 90px;
+    }
+
+    .footer-links ul {
+        list-style-type: none;
+    }
+
+    .footer-links ul li {
+        margin-bottom: 6px;
+        font-size: 12px;
+        font-weight: 300;
+        line-height: 24px;
+    }
+
+    .footer-links h5 {
+        font-size: 14px;
+        line-height: 31px;
+    }
+
+    section#footer p {
+        font-size: 12px;
+        font-weight: bold;
+        margin-left: 40px;
+        padding-bottom: 22px;
+    }
+
+    .bottom-img {
+        display: grid;
+        text-align: left;
+    }
+
+    .bottom-img>img:first-child {
+        width: 206px;
+    }
+
+    .bottom-img>img:nth-child(2) {
+        width: 154px;
+    }
+
+    .bottom-img p {
+        margin-left: 0px !important;
+    }
+
+    .footer-links-small img {
+        width: 20px;
+        vertical-align: middle;
+        margin-right: 20px;
+    }
+    @media (max-width: 1220px) {
+        .project-wrapper{
+            flex-wrap: wrap;
+        }
+        .partner-wrapper{
+            width: 100%;
+        }
+        .grow-wrapper {
+    display: block;
+    text-align: center;
+}
+.grow-one.three {
+    text-align: right;
+}
+.grow-one {
+    text-align: left;
+}
+.grow-one.two p{
+    width: 80%;
+    margin: auto;
+}
+.big-wrapper h1{
+    font-size:150px;
+    text-align:center;
+}
+.toast-inner,
+        .club-inner {
+            margin: 0;
+            width: 100%;
+            text-align: center;
+            padding: 20px;
+            
+        }
+        .double-wrapper{
+            display: block;
+            margin: auto;
+        }
+        .toast, .club{
+            margin-bottom: 20px;
+        }
+        section#double-offer{
+            margin-left: 230px;
+        }
+        .toast-inner h3 img, .club-inner h3 img{
+            left: 70%;
+        }
+        .offer-content{
+            display: block;
+        }
+        .offer-wrapper{
+            width: 670px;
+        }
+        section#hero .container, section#header .container{
+            margin: 0%;
+        }
+        .offer-wrapper img{
+            width: 175px;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .container {
+margin-left: 10px;
+margin-right: 10px;
+}
+        section#hero .container,
+        section#header .container {
+            margin-left: 0px;
+            margin-right: 0px;
+        }
+
+        .hello-btn {
+            display: none;
+        }
+
+        .hello-wrapper {
+            display: none;
+        }
+
+        .hero-heading h1 {
+            font-size: 70px;
+        }
+
+        .camera {
+            width: 330px;
+            margin: auto;
+            margin-bottom: 50px;
+        }
+
+        .project-img img {
+      width: 330px;
+      height: 400px;
+    }
+        .hero-sideimage img {
+            display: none;
+        }
+
+        section#plus {
+            margin: 10px;
+        }
+
+        .plus-wrapper h2 {
+            font-size: 26px;
+            margin-bottom: 15px;
+        }
+
+        .plus-wrapper p {
+            width: 100%;
+        }
+
+        section#offer {
+            margin: 0;
+        }
+
+        section#double-offer {
+            margin: 20px 0;
+        }
+
+        .double-wrapper {
+            display: block;
+        }
+
+        .big-wrapper h1 {
+            font-size: 60px;
+            line-height: 90px;
+        }
+        .notre-inner {
+margin-left: 20px;
+margin-right: 20px;
+}
+
+        .notre-one {
+width: 100%;
+}
+        .grow-wrapper {
+            display: block;
+        }
+
+        .grow-one.two p {
+            width: 100%;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        .grow-one.three {
+            text-align: right;
+        }
+
+        .partner-wrapper {
+            width: 100%;
+        }
+
+        .offer-wrapper img {
+            display: none;
+        }
+
+        .toast img,
+        .club img {
+            display: none;
+        }
+
+        .offer-wrapper {
+            width: 100%;
+            margin: 0;
+            text-align: center;
+        }
+
+        .offer-content {
+            display: block;
+        }
+
+        .toast-inner,
+        .club-inner {
+            margin: 0;
+            width: 100%;
+            text-align: center;
+            padding: 20px;
+
+        }
+
+        .toast,
+        .club {
+            width: 100%;
+            margin-bottom: 30px;
+            height: auto;
+        }
+
+        .project-img img {
+            margin-bottom: 30px;
+        }
+
+        .partner-wrapper img {
+            width: 50px;
+            height: 50px;
+        }
+
+        section#project {
+            margin-left: 0px;
+            margin-bottom: 0px;
+            text-align: center;
+        }
+
+        section#notre {
+            margin: 0;
+        }
+
+        .notre-heading p {
+            width: 100%;
+            padding: 0 10px;
+        }
+
+        .notre-heading h2 {
+            line-height: 45px;
+            font-size: 40px;
+        }
+
+        .project-wrapper {
+            display: block;
+        }
+
+        .project-one {
+            width: 100%;
+        }
+
+        .footer-wrapper {
+            display: block;
+        }
+    }
+
+</style>
+</head>
+
+<body>
+<section id="header">
+    <div class="container">
+        <div class="header-wrapper">
+            <div class="logo-wrapper">
+                <img src="img\logo.png" alt="Logo">
+                <p>offres à propos projets manifeste</p>
+            </div>
+            <div class="hello-btn">
+                <button class="btn">1h de conseil gratuit</button>
+            </div>
+            <div class="hello-wrapper">
+                <img src="img\Vector (2).png" alt="Hello">
+            </div>
+        </div>
+    </div>
+</section>
+<section id="hero">
+    <div class="container">
+        <div class="hero-wrapper">
+            <div class="hero-heading">
+                <h1>digital makers</h1>
+                <div class="camera">
+                    <img src="img\camera.png" alt="camera">
+                    <p><b>2min pour nous connaitre</b><br><span>C'est parti !</span></p>
+                </div>
+            </div>
+
+            <div class="hero-sideimage">
+                <img src="img\banner-2.png" alt="Banner">
+            </div>
+        </div>
+        <div class="hello-honors">
+            <img src="img\w2.png" alt="Hello">
+        </div>
+    </div>
+</section>
+<section id="plus">
+    <div class="container">
+        <div class="plus-wrapper">
+            <h2>Plus de simplicité, de flexibilité,<br> de design et d'échanges</h2>
+            <p>Chez Hedy, nous prônons plus de simplicité dans les process :<span> Less Meeting, More
+                    Organization</span></p>
+            <p>Pour cela, nous avons mis en place <b>trois offres claires :</b></p>
+        </div>
+    </div>
+</section>
+<section id="offer">
+    <div class="container">
+        <div class="offer-wrapper">
+            <img src="img\offer-left.png" alt="frame">
+            <div class="offer-heading">
+                <h3>offre wrap <img src="img\wrap.png" alt=""></h3>
+                <p>L’offre <b>wrap</b> vous permettra de lancer votre présence en ligne avec un accompagnement<br>
+                    stratégique sur-mesure, sans rogner sur la qualité du design et du référencement.</p>
+            </div>
+            <div class="offer-content">
+                <h4>👉 Prestation SEO</h4>
+                <h4>👉 Design sur-mesure</h4>
+                <h4>👉 Stratégie digitale optimisée</h4>
+            </div>
+            <button class="btn">en savoir plus sur cette offre</button>
+        </div>
+    </div>
+</section>
+<section id="double-offer">
+    <div class="container">
+        <div class="double-wrapper">
+            <div class="toast">
+                <img src="img\offer-left.png" alt="frame">
+                <div class="toast-inner">
+                    <h3>offre toast <img src="img\bread.png" alt=""></h3>
+                    <p>Vous avez besoin d’une présence en ligne <b>rapide et efficace</b> mais surtout limitée en
+                        terme de temps et/ou de budget : l’offre toast est faite pour vous !</p><br><br>
+                    <p>Design personnalisé, accompagnement, conseil...</p><br><br>
+                    <p><b>👉 Le tout sur une base solide en référencement pour que vos futurs clients vous trouvent
+                            en quelques clics.</b></p>
+                    <button class="btn">parlez-nous de votre besoin</button>
+                </div>
+
+            </div>
+            <div class="club">
+                <img src="img\offer-left.png" alt="frame">
+                <div class="club-inner">
+                    <h3>offre club <img src="img\juice.png" alt=""></h3>
+                    <p>Vous êtes une agence et <b>vous avez besoin de renfort</b> sur des projets spécifiques ? Vous
+                        êtes une équipe d’experts et vous souhaitez intégrer des profils qui sachent s’adapter à
+                        votre organisation ? Votre demande colle davantage à une technologie spécifique ?</p>
+                    <br><br>
+
+                    <p><b>👉 La force de cette offre c’est le réseau : chacun sa spécialité et à chaque projet son
+                            expertise.</b></p>
+                    <button class="btn">parlez-nous de votre besoin</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+<section id="big-heading">
+    <div class="big-wrapper">
+        <h1>ergonomie s</h1>
+    </div>
+</section>
+<section id="grow">
+    <div class="grow-wrapper">
+        <div class="grow-one">
+            <img src="img\rirfirf.png" alt="">
+        </div>
+        <div class="grow-one two">
+            <h2>Make you grow,<br> together .</h2>
+            <p>Vous avez beaucoup à nous apprendre sur votre marché et votre offre. Des infos précieuses qui
+                méritent toute notre attention : parce qu’une solution digitale, ça se construit ensemble. C’est
+                pour cela qu’un projet ne démarre jamais sans un vrai kick-off et que nous avons développés des
+                méthodologies de co-construction. Vous impliquer dans chaque étape du projet, c’est vous en donner
+                une maîtrise.</p>
+            <button class="btn">nous contacter</button>
+        </div>
+        <div class="grow-one three">
+            <img src="img\grow2.png" alt="">
+        </div>
+    </div>
+</section>
+<section id="partner-logo">
+    <div class="contacter">
+        <h3>Ils nous ont<br> fait confiance</h3>
+        <div class="partner-wrapper">
+            <img src="img\haba.png" alt="logo">
+            <img src="img\2.png" alt="logo">
+            <img src="img\3.png" alt="logo">
+            <img src="img\4.png" alt="logo">
+            <img src="img\5.png" alt="logo">
+        </div>
+        <div class="partner-wrapper">
+            <img src="img\6.png" alt="logo">
+            <img src="img\7.png" alt="logo">
+            <img src="img\8.png" alt="logo">
+            <img src="img\9.png" alt="logo">
+            <img src="img\10.png" alt="logo">
+        </div>
+    </div>
+</section>
+<section id="notre">
+    <div class="container">
+        <div class="notre-wrapper">
+            <div class="notre-heading">
+                <h2>Notre méthodologie</h2>
+                <p>Créer une équipe pour votre projet c’est bien, avoir une organisation sans faille c’est mieux.
+                    Pourquoi ? Pour gagner en productivité, en temps et en ébullition d’idées.</p>
+            </div>
+            <div class="notre-inner">
+                <div class="notre-one">
+                    <img src="img\message.png" alt="logo">
+                    <h4>Ateliers</h4>
+                    <p>Qui vont nous permettre d'échanger, de débattre, de proposer, de co-créer et de valider.</p>
+                </div>
+                <div class="notre-one">
+                    <img src="img\pencil.png" alt="logo">
+                    <h4>Figjam</h4>
+                    <p>Pour itérer sur votre projet, Figjam est un grand tableau blanc digital : Brainstorming,
+                        idées.. vous allez adorer</p>
+                </div>
+                <div class="notre-one">
+                    <img src="img\figma.png" alt="logo">
+                    <h4>Figma</h4>
+                    <p>Pour imaginer ensemble le design et l’expérience de votre projet, Figma est l'outil que nous
+                        privilégions.</p>
+                </div>
+                <div class="notre-one">
+                    <img src="img\code.png" alt="logo">
+                    <h4>Développement</h4>
+                    <p>Pour développer vos sites et applications nous favorisons : Webflow, Bubble, Adalo, Shopify
+                        et Wordpress.</p>
+                </div>
+                <div class="notre-one" style="opacity: 0.6;    margin-bottom: 103px;">
+                    <img src="img\asan.png" alt="logo">
+                    <h4>Asana</h4>
+                    <p>Pour la gestion de votre projet : planning, tâches, ticketing, gestion d’équipe, Asana est un
+                        indispensable.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="project">
+    <div class="container">
+        <div class="project-wrapper">
+            <div class="project-one">
+                <h3>Derniers projets</h3>
+                <p><b>Vous voulez en voir plus ?</b> Contactez-nous et nous nous ferons un plaisir de partager avec
+                    vous quelques unes de nos réalisations.</p>
+                <button class="btn">découvrir d'autres projets</button>
+            </div>
+            <div class="project-img">
+                <img src="img\project1.png" alt="">
+            </div>
+            <div class="project-img">
+                <img src="img\seeting.png" alt="">
+            </div>
+        </div>
+    </div>
+</section>
+<section id="footer">
+    <div class="footer-wrapper">
+        <div class="footer-inner">
+            <img src="img\footer-logo.png" alt="Footer-logo">
+        </div>
+        <div class="footer-links">
+            <h5>Expertises</h5>
+            <ul>
+                <li>Design Thinking</li>
+                <li>UX Design</li>
+                <li>UI Design</li>
+                <li>Product Design</li>
+                <li>Developpement Webflow</li>
+            </ul>
+        </div>
+        <div class="footer-links">
+
+            <ul>
+                <li>Developpement Shopify</li>
+                <li>Referencement SEO</li>
+                <li>Referencement SEA</li>
+                <li>Reseaux sociaux</li>
+            </ul>
+        </div>
+        <div class="footer-links">
+            <h5>France</h5>
+            <ul>
+                <li>hello@hedyagency.com</li>
+                <li>07 56 97 20 23</li>
+                <li><b>Rejoignez-nous</b></li>
+            </ul>
+            <div class="bottom-img">
+                <img src="img\a.png" alt="">
+                <img src="img\web.png" alt="">
+                <p><b>Mentions légales</b></p>
+            </div>
+        </div>
+        <div class="footer-links-small">
+            <img src="img\be.png" alt="">
+            <img src="img\ball.png" alt="">
+            <img src="img\linkedln.png" alt="">
+        </div>
+    </div>
+    <p>©2022 Hedy. Tous droits reservés.</p>
+</section>
+
+</body>
+
+</html>
